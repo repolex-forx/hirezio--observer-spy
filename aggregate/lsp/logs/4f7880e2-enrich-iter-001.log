@@ -1,0 +1,20 @@
+[2026-11-23T05:48:15Z] === ENRICH ITERATION 1 START | repo=hirezio/observer-spy sha=4f7880e2 ===
+[2026-11-23T05:48:15Z] [iter=1] PHASE START: enrich repo=hirezio/observer-spy sha=4f7880e2 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/4f7880e2-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/4f7880e29298929846c3d73aa93d2f1af5bc4813.nq.gz
+[2026-11-23T05:48:28Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=82 MB
+[2026-11-23T05:48:28Z] [iter=1] AST store loaded triples=20431 load_secs=0 mem_mb=113 MB
+[2026-11-23T05:48:28Z] [iter=1] Step 2: Finding LSP targets mem_mb=113 MB
+[2026-11-23T05:48:28Z] [iter=1] LSP targets found call_sites=283 imports=23 extends=2 implements=1 secs=0
+[2026-11-23T05:48:28Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=113 MB
+[2026-11-23T05:48:28Z] [iter=1] Position index built positions=1195 nodes_with_types=1549 secs=0 mem_mb=113 MB
+[2026-11-23T05:48:28Z] [iter=1] Step 3: Starting LSP resolution mem_mb=113 MB already_completed_types=[] already_completed_files=0
+[2026-11-23T05:48:28Z] [iter=1] Resolving target type target_type=call_site count=283
+[2026-11-23T05:48:33Z] [iter=1] Target type resolved target_type=call_site resolved=125 errors=0 secs=5 mem_mb=113 MB
+[2026-11-23T05:48:33Z] [iter=1] Resolving target type target_type=import_statement count=23
+[2026-11-23T05:48:34Z] [iter=1] Target type resolved target_type=import_statement resolved=12 errors=0 secs=1 mem_mb=113 MB
+[2026-11-23T05:48:34Z] [iter=1] Resolving target type target_type=extends_clause count=2
+[2026-11-23T05:48:35Z] [iter=1] Target type resolved target_type=extends_clause resolved=2 errors=0 secs=1 mem_mb=113 MB
+[2026-11-23T05:48:35Z] [iter=1] Resolving target type target_type=implements_clause count=1
+[2026-11-23T05:48:36Z] [iter=1] Target type resolved target_type=implements_clause resolved=0 errors=0 secs=1 mem_mb=113 MB
+[2026-11-23T05:48:41Z] [iter=1] Step 5: Writing final enrichment file triples=2648
+[2026-11-23T05:48:41Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/4f7880e29298929846c3d73aa93d2f1af5bc4813.nq.gz size_kb=42
+[2026-11-23T05:48:41Z] [iter=1] PHASE END: enrich elapsed_s=26 elapsed_min=0.4 total_triples=2648
