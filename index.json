@@ -1,0 +1,11 @@
+{
+  "org": "hirezio",
+  "repo": "observer-spy",
+  "versions": [
+    {
+      "commit": "4f7880e29298929846c3d73aa93d2f1af5bc4813",
+      "tag": "v2.2.0",
+      "parsed_at": "2026-11-23T05:50:33.511684+00:00"
+    }
+  ]
+}
